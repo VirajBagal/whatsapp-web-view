@@ -77,44 +77,44 @@ const LoginComponent = () => {
     cookieManager.setUserInfo(response.profileObj);
   };
 
-  // const info = {
-  //   email: "virajbagal12@gmail.com",
-  //   name: "Viraj Bagal",
-  //   imageUrl: "/whatsapp-clone/profile/ayushk.jpeg"
-  // }
+  const info = {
+    email: "virajbagal12@gmail.com",
+    name: "Viraj Bagal",
+    imageUrl: "/whatsapp-clone/profile/ayushk.jpeg"
+  }
 
-  // return <App userInfo={info} />
+  return <App userInfo={info} />
 
-  return (
-    <>
-      {userInfo ? (
-        <App userInfo={userInfo} />
-      ) : (
-        <Container>
-          <Header>WHATSAPP WEB CLONE</Header>
-          <CardView>
-            <Instructions>
-              <Heading>To use WhatsApp on your computer:</Heading>
-              <ol>
-                <li>You need to Signin using your Google Account.</li>
-                <li>You can anytime logout from the Web.</li>
-                <li>
-                  Click on Signin button to continue using the Whatsapp Clone.
-                </li>
-              </ol>
-              <GoogleLogin
-                clientId="412954107899-68euuaorrd8rvs138sa74g0fhudesc2f.apps.googleusercontent.com"
-                buttonText="Sign In with Google"
-                cookiePolicy={"single_host_origin"}
-                onSuccess={responseGoogle}
-                onFailure={responseGoogle}
-              />
-            </Instructions>
-            <QRCode src="whatsapp-clone/qr-placeholder.png" />
-          </CardView>
-        </Container>
-      )}
-    </>
-  );
+  // return (
+  //   <>
+  //     {userInfo ? (
+  //       <App userInfo={userInfo} />
+  //     ) : (
+  //       <Container>
+  //         <Header>WHATSAPP WEB CLONE</Header>
+  //         <CardView>
+  //           <Instructions>
+  //             <Heading>To use WhatsApp on your computer:</Heading>
+  //             <ol>
+  //               <li>You need to Signin using your Google Account.</li>
+  //               <li>You can anytime logout from the Web.</li>
+  //               <li>
+  //                 Click on Signin button to continue using the Whatsapp Clone.
+  //               </li>
+  //             </ol>
+  //             <GoogleLogin
+  //               clientId="412954107899-68euuaorrd8rvs138sa74g0fhudesc2f.apps.googleusercontent.com"
+  //               buttonText="Sign In with Google"
+  //               cookiePolicy={"single_host_origin"}
+  //               onSuccess={responseGoogle}
+  //               onFailure={responseGoogle}
+  //             />
+  //           </Instructions>
+  //           <QRCode src="whatsapp-clone/qr-placeholder.png" />
+  //         </CardView>
+  //       </Container>
+  //     )}
+  //   </>
+  // );
 };
 export default LoginComponent;

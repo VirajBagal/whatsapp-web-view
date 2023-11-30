@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:3001";
+const API_BASE_URL = "http://localhost:3002";
 
 const createUser = async (userData) => {
   return await axios.post(`${API_BASE_URL}/user`, userData);
