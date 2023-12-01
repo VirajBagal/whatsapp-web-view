@@ -1,8 +1,8 @@
-# WhatsApp Clone Backend - The Indian Dev
+# whatsapp-clone Clone Backend - The Indian Dev
 
 ### What is this repository for? ###
 
-* Whatsapp Clone's Backend with Express and NodeJS
+* whatsapp-clone Clone's Backend with Express and NodeJS
 * Version 1.0
 
 ### How do I get set up? ###

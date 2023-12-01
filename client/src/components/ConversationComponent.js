@@ -84,7 +84,6 @@ function ConversationComponent(props) {
   }, [selectedChat]);
 
   const onEnterPress = async (event) => {
-    let channelId = selectedChat.channelData.id;
     if (event.key === "Enter") {
       refreshContactList();
       const messages = [...messageList];

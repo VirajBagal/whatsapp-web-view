@@ -105,7 +105,6 @@ const SearchResults = styled.div`
 
 const ContactComponent = (props) => {
   const { userData, setChat, userInfo } = props;
-  const [searchResult, setSearchResult] = useState();
   const otherUser =
     userData.channelUsers?.find(
       (userObj) => userObj.email !== userInfo.email
@@ -155,6 +154,7 @@ function ContactListComponent(props) {
     const userData = await httpManager.searchUser(searchText);
     if (userData.data?.success) setSearchResult(userData.data.responseData);
   };
+
   return (
     <Container>
       <ProfileInfoDiv>

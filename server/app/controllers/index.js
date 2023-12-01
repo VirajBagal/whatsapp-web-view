@@ -3,7 +3,6 @@ import { contactsList } from "./mockData";
 
 module.exports = {
   getChannelList: async (req, res) => {
-    const requestData = req.query;
     const channelList = contactsList;
     sendResponse(res, channelList, "Channel list fetched", true, 200);
   },

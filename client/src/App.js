@@ -58,7 +58,7 @@ function App(props) {
         <Placeholder>
           <ChatPlaceholder src="/whatsapp-clone/welcome-placeholder.jpeg" />
           <span>Keep your phone connected</span>
-          WhatsApp connects to your phone to sync messages.
+          whatsapp-clone connects to your phone to sync messages.
         </Placeholder>
       )}
     </Container>

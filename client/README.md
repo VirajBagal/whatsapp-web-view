@@ -1,4 +1,4 @@
-# Whatsapp Clone - Fullstack Projects
+# whatsapp-clone Clone - Fullstack Projects
 
 ![](whatsapp-clone.gif)
 
